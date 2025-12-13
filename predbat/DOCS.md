@@ -2,19 +2,19 @@
 
 This add-on can be used with Home Assistant to run Predbat without AppDaemon, or even outside Home Assistant
 
-![image](https://github.com/springfall2008/predbat_addon/assets/48591903/50580da1-5110-4711-b740-1c14cc103835)
+![image](https://github.com/ajstratton93/predbat_addon/assets/48591903/50580da1-5110-4711-b740-1c14cc103835)
 
-For Predbat documention see: https://springfall2008.github.io/batpred/
+For Predbat documention see: https://ajstratton93.github.io/batpred/
 
 If you want to buy me a beer then please use Paypal - [tdlj@tdlj.net](mailto:tdlj@tdlj.net)
-![image](https://github.com/springfall2008/batpred/assets/48591903/b3a533ef-0862-4e0b-b272-30e254f58467)
+![image](https://github.com/ajstratton93/batpred/assets/48591903/b3a533ef-0862-4e0b-b272-30e254f58467)
 
 ## Installation as an add-on in Home Assistant
 
 * Go to settings, add-ons, add-on store, custom repositories
-* add 'https://github.com/springfall2008/predbat_addon' as a new repository
+* add 'https://github.com/ajstratton93/predbat_addon' as a new repository
 
-![image](https://github.com/springfall2008/predbat_addon/assets/48591903/7eb18076-888b-4ea5-844b-cfa93157b759)
+![image](https://github.com/ajstratton93/predbat_addon/assets/48591903/7eb18076-888b-4ea5-844b-cfa93157b759)
 
 * Click out of the repository list and refresh the page
 * Scroll down and find Predbat, click on it and click 'Install'
@@ -32,8 +32,8 @@ Do not run this at the same time as the appdaemon-predbat or Predbat within AppD
 
 Predbat can be run on a seperate machine also, you will need a MacOS with Python3, a Linux box (e.g. Debian) or Windows with the Linux subsystem (not yet tested but should work).
 
-* Download the files from rootfs directory (https://github.com/springfall2008/predbat_addon/tree/main/predbat/rootfs) into their own directory on your machine
-* Make sure your python environment has the dependancies required installed (https://github.com/springfall2008/predbat_addon/blob/main/predbat/requirements.txt)
+* Download the files from rootfs directory (https://github.com/ajstratton93/predbat_addon/tree/main/predbat/rootfs) into their own directory on your machine
+* Make sure your python environment has the dependancies required installed (https://github.com/ajstratton93/predbat_addon/blob/main/predbat/requirements.txt)
 * Launch run.csh (you might want to make this startup from boot if you want to keep Predbat running). This will download Predbat for the first time and then fail
 * Edit apps.yaml (or copy your previous version from an old installs inside HA) as per the Predbat documentation
 * Add `ha_url` / `ha_key` settings into apps.yaml
@@ -43,10 +43,10 @@ Predbat can be run on a seperate machine also, you will need a MacOS with Python
 
 ## Running from within Docker
 
-* Download the contents of 'https://github.com/springfall2008/predbat_addon/tree/main/predbat' onto your machine
+* Download the contents of 'https://github.com/ajstratton93/predbat_addon/tree/main/predbat' onto your machine
 * You should see Dockerfile.standalone and rootfs directories
-* Download *.py from Predbat repo (https://github.com/springfall2008/batpred/blob/main/apps/predbat/predbat.py) and place the code into rootfs
-* Download apps.yaml from Predbat repo (https://github.com/springfall2008/batpred/blob/main/apps/predbat/config/apps.yaml), place it into rootfs and edit it as per the Predbat documentation
+* Download *.py from Predbat repo (https://github.com/ajstratton93/batpred/blob/main/apps/predbat/predbat.py) and place the code into rootfs
+* Download apps.yaml from Predbat repo (https://github.com/ajstratton93/batpred/blob/main/apps/predbat/config/apps.yaml), place it into rootfs and edit it as per the Predbat documentation
 * Add `ha_url` / `ha_key` settings into apps.yaml.
   * The `ha_url` must be your Home Assistant machine e.g. http://homeassistant.local:8123
   * The `ha_key` must be the persistant key you can generate in Home Assistant in your user/security section
@@ -115,7 +115,7 @@ services:
 
 ## Upgrading from AppDaemon to Predbat add-on
 
-Step-by-step instructions to upgrade from running Predbat within AppDaemon or the AppDaemon-predbat add-on to using this Predbat add-on are included in the [Predbat installation instructions](https://springfall2008.github.io/batpred/install/#upgrading-from-appdaemon-to-predbat-add-on)
+Step-by-step instructions to upgrade from running Predbat within AppDaemon or the AppDaemon-predbat add-on to using this Predbat add-on are included in the [Predbat installation instructions](https://ajstratton93.github.io/batpred/install/#upgrading-from-appdaemon-to-predbat-add-on)
 
 ## Copyright
 

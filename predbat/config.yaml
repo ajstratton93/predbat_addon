@@ -1,9 +1,9 @@
 ---
-name: Predbat
-version: 1.4.0
-slug: predbat
+name: Predbat (AJS custom fork)
+version: 8.8.8
+slug: predbat_custom
 description: Home Battery Prediction and Control
-url: https://github.com/springfall2008/predbat_addon
+url: https://github.com/ajstratton93/predbat_addon
 codenotary: tdlj@tdlj.net
 ingress: True
 ingress_port: 5052

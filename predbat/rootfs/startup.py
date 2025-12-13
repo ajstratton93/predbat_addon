@@ -14,7 +14,7 @@ if not os.path.exists(root):
 
 # Download the latest Predbat release from Github
 if not os.path.exists(root + "/apps.yaml"):
-    url = "https://api.github.com/repos/springfall2008/batpred/releases"
+    url = "https://api.github.com/repos/ajstratton93/batpred/releases"
     print("Download Predbat release list from {}".format(url))
     try:
         r = requests.get(url)
@@ -41,7 +41,7 @@ if not os.path.exists(root + "/apps.yaml"):
                 break
     
     if tag_name:
-        download_url = "https://github.com/springfall2008/batpred/archive/refs/tags/{}.zip".format(tag_name)
+        download_url = "https://github.com/ajstratton93/batpred/archive/refs/tags/{}.zip".format(tag_name)
         save_path = root + "/predbat_{}.zip".format(tag_name)
         print("Downloading Predbat {}".format(download_url))
 

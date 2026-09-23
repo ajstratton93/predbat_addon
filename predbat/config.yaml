@@ -1,6 +1,6 @@
 ---
 name: Predbat (AJS custom fork)
-version: 26.9.23.0
+version: 26.9.23.1
 slug: predbat_custom
 description: Home Battery Prediction and Control
 url: https://github.com/ajstratton93/predbat_addon
